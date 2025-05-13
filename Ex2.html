@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter an integer: <input type="text" id="integerInput">
+    <button onclick="printInteger()">Submit</button>
+
+    <script>
+        function printInteger() {
+
+            let input = document.getElementById("integerInput").value;
+            let number = Number(input)
+    
+
+            if (Number.isNaN(number)){
+                console.log (input + " is not a valid input!");
+                alert(`${input} is Invalid. Please enter an Integer`);
+
+            }
+            else{
+            switch (Number.isInteger(number)) {
+                case ( number < 0) :
+                    console.log (input + " is Negative input");
+                    alert(`${number} is Negative`);
+                    break;
+                case (number == 0 ):
+                    console.log ( "Input is " + input )
+                    alert(`Input is ${number}`);
+                    break;  
+                case ( number >= 0)  : 
+                    console.log (input + " is Possitive input");
+                    alert(`${number} is Positive` );
+                    break;
+            }
+            }            
+        }
+    </script>
+</body>
+</html>
+

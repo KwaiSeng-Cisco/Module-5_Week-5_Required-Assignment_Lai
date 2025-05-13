@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "prompt": "^1.3.0",
+    "prompt-sync": "^4.2.0",
+    "save": "^2.9.0"
+  },
+  "name": "module-5_week-5_required-assignment_lai",
+  "version": "1.0.0",
+  "description": "1. Variable Declaration and Data Types (5 Marks)",
+  "main": "Ex1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
