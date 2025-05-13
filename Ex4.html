@@ -104,6 +104,12 @@
     <script>
 
         function printentry(element){
+        
+        /*
+        Get user entry form the label.
+        Validate if this entry is a valid interger for calculating the area.
+        Entry must be Interger >=0
+        */
 
             let id=element.id
             let input = document.getElementById(id).value;
@@ -121,6 +127,11 @@
         }
 
         function PrintArea(){
+
+            /*
+            Calculate the area of the rectangle
+            - Triggered when the Calculate button is pressed
+            */
 
             let length = document.getElementById("Length").value;
             let width = document.getElementById("Width").value;
